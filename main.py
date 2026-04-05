@@ -5,11 +5,8 @@ from dotenv import load_dotenv
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 import time
+from ddgs import DDGS
 
-try:
-    from ddgs import DDGS
-except ImportError:
-    from duckduckgo_search import DDGS
 
 load_dotenv()
 
