@@ -1,0 +1,155 @@
+/* ── General ── */
+[data-testid="stAppViewContainer"] { background: #0f1117; }
+h1, h2, h3, h4, p, label, .stMarkdown { color: #e8eaf6 !important; }
+
+/* ── Remove top spacing ── */
+.stMarkdown > div:first-child h1 { margin-top: 0 !important; padding-top: 0 !important; }
+
+/* ── Step Cards ── */
+.step-card {
+    background: #1a1d2e;
+    border: 1px solid #2d3154;
+    border-radius: 14px;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 1.2rem;
+}
+.step-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #7c83ff !important;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+.step-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #ffffff !important;
+    margin-bottom: 0.6rem;
+}
+.step-subtitle {
+    font-size: 0.85rem;
+    color: #8b8fa8 !important;
+    margin-bottom: 0.9rem;
+}
+
+/* ── Chip Buttons ── */
+.stButton > button {
+    background: #1e2235 !important;
+    border: 1px solid #2d3154 !important;
+    color: #c5c8e8 !important;
+    border-radius: 999px !important;
+    font-size: 0.78rem !important;
+    padding: 0.25rem 0.6rem !important;
+    transition: all 0.15s;
+    height: auto !important;
+    min-height: 0 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+.stButton > button:hover {
+    background: #2a2f52 !important;
+    border-color: #5c63c0 !important;
+    color: #ffffff !important;
+}
+
+/* ── Generate Button ── */
+[data-testid="baseButton-primary"] > button,
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, #5c63c0, #7c43c8) !important;
+    border: none !important;
+    color: white !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border-radius: 12px !important;
+    padding: 0.7rem 2rem !important;
+    height: auto !important;
+    letter-spacing: 0.03em;
+}
+
+/* ── Inputs ── */
+.stTextInput > div > div > input {
+    background: #1a1d2e !important;
+    border: 1px solid #2d3154 !important;
+    border-radius: 10px !important;
+    color: #e8eaf6 !important;
+    font-size: 0.95rem !important;
+    padding: 0.6rem 0.9rem !important;
+}
+.stTextInput > div > div > input:focus {
+    border-color: #5c63c0 !important;
+    box-shadow: 0 0 0 2px rgba(92,99,192,0.25) !important;
+}
+
+/* ── Radio ── */
+.stRadio > div { flex-direction: row; gap: 0.8rem; }
+.stRadio label {
+    background: #1a1d2e !important;
+    border: 1px solid #2d3154 !important;
+    border-radius: 10px !important;
+    padding: 0.5rem 1.1rem !important;
+    color: #c5c8e8 !important;
+    font-size: 0.88rem !important;
+    cursor: pointer;
+}
+
+/* ── Tabs ── */
+.stTabs [data-baseweb="tab-list"] { gap: 0.5rem; background: transparent; }
+.stTabs [data-baseweb="tab"] {
+    background: #1a1d2e !important;
+    border-radius: 8px 8px 0 0 !important;
+    border: 1px solid #2d3154 !important;
+    color: #8b8fa8 !important;
+    font-weight: 500;
+}
+.stTabs [aria-selected="true"] {
+    background: #2a2f52 !important;
+    color: #ffffff !important;
+    border-bottom-color: transparent !important;
+}
+.stTabs [data-baseweb="tab-panel"] {
+    background: #1a1d2e !important;
+    border: 1px solid #2d3154 !important;
+    border-radius: 0 8px 8px 8px !important;
+    padding: 1.5rem !important;
+}
+
+/* ── Blog Card ── */
+.blog-card {
+    background: #1e2235;
+    border: 1px solid #2d3154;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 0.9rem;
+    transition: border-color 0.15s;
+}
+.blog-card:hover { border-color: #5c63c0; }
+.blog-title { font-size: 0.97rem; font-weight: 600; color: #7c83ff !important; }
+.blog-snippet { font-size: 0.82rem; color: #8b8fa8 !important; margin-top: 0.3rem; }
+.blog-url { font-size: 0.75rem; color: #525780 !important; margin-top: 0.25rem; }
+
+/* ── Video Card ── */
+.video-card {
+    background: #1e2235;
+    border: 1px solid #2d3154;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.video-meta { padding: 0.7rem 0.9rem; }
+.video-title { font-size: 0.88rem; font-weight: 600; color: #e8eaf6 !important; }
+.video-channel { font-size: 0.76rem; color: #8b8fa8 !important; margin-top: 0.2rem; }
+
+/* ── Summary Bar ── */
+.summary-bar {
+    background: #1a1d2e;
+    border: 1px solid #2d3154;
+    border-radius: 10px;
+    padding: 0.7rem 1.2rem;
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+}
+.summary-tag { font-size: 0.82rem; color: #c5c8e8 !important; }
+.summary-tag span { color: #7c83ff !important; font-weight: 600; }
